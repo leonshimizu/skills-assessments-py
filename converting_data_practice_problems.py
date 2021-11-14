@@ -1,15 +1,58 @@
 #  1. Convert an array of arrays into a hash.
 #     For example, [[1, 3], [8, 9], [2, 16]] becomes {1 => 3, 8 => 9, 2 => 16}.
 
-list = [[1, 3], [8, 9], [2, 16]]
-dictionary = {}
+# list = [[1, 3], [8, 9], [2, 16]]
+# dictionary = {}
 
+# for group in list:
+#     dictionary[group[0]] = group[1]
+
+# print(dictionary)
 
 #  2. Convert an array of hashes into a hash using the :id key from the array's hashes as the keys in the new hash.
 #     For example, [{id: 1, color: "blue", price: 32}, {id: 2, color: "red", price: 12}] becomes {1 => {id: 1, color: "blue", price: 32}, 2 => {id: 2, color: "red", price: 12}}.
 
+# dictionary = [
+#     {
+#         "id": 1,
+#         "color": "blue",
+#         "price": 32
+#     },
+#     {
+#         "id": 2,
+#         "color": "red",
+#         "price": 12
+#     }
+# ]
+# new_dictictionary = {}
+
+# for product in dictionary:
+#     new_dictictionary[product["id"]] = product
+
+# print(new_dictictionary)
+
 #  3. Convert a string into a hash with keys for each letter in the string and values for the number of times the letter appears in the string.
 #     For example, "bookkeeper" becomes {"b" => 1, "o" => 2, "k" => 2, "e" => 3, "p" => 1, "r" => 1}.
+
+# string = "bookkeeper"
+# dictionary = {}
+
+# for letter in string:
+#     print(letter)
+#     print(None)
+
+# print(dictionary)
+
+# test_str = "GeeksforGeeks"
+# all_freq = {}
+
+# for i in test_str:
+#     if i in all_freq:
+#         all_freq[i] += 1
+#     else:
+#         all_freq[i] = 1
+
+# print(all_freq)
 
 #  4. Convert a hash into an array of arrays.
 #     For example, {"chair" => 100, "book" => 14} becomes [["chair", 100], ["book", 14]].
@@ -31,6 +74,5 @@ dictionary = {}
 
 # 10. Given a hash, create a new hash that has the keys and values switched.
 #     For example, {"a" => 1, "b" => 2, "c" => 3} becomes {1 => "a", 2 => "b", 3 => "c"}.
-
 
 # SOLUTIONS: https://gist.github.com/peterxjang/216a7a6e8411ee5c05118e78022f2bc7
