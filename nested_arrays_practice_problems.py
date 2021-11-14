@@ -173,19 +173,16 @@
 #  9. Use nested loops with an array of numbers to compute a new array containing the first two numbers (from the original array) that add up to the number 10. If there are no two numbers that add up to 10, return false.
 #     For example, [2, 5, 3, 1, 0, 7, 11] becomes [3, 7].
 
-from abc import abstractproperty
+# list = [2, 5, 5, 3, 1, 0, 7, 11]
+# new_array = []
 
-
-list = [2, 5, 3, 1, 0, 7, 11, 5]
-new_array = []
-
-for i in list:
-    for j in list:
-        if len(new_array) < 2:
-            if i != j:
-                if (i + j) == 10:
-                    new_array.append(i)
-                    new_array.append(j)
+# for i in list:
+#     for j in list:
+#         if len(new_array) < 2:
+#             if i != j:
+#                 if (list[i] + list[j]) == 10:
+#                     new_array.append(list[i])
+#                     new_array.append(list[j])
 
 # i = 0
 # while i < len(list):
@@ -199,10 +196,26 @@ for i in list:
 #         j += 1
 #     i += 1
 
-print(new_array)
+# print(new_array)
 
 # 10. Use a nested loop to convert an array of string arrays into a single string.
 #     For example, [["a", "man"], ["a", "plan"], ["a", "canal"], ["panama"]] becomes "amanaplanacanalpanama".
 
+# list = [["a", "man"], ["a", "plan"], ["a", "canal"], ["panama"]]
+# string = ""
+
+# for group in list:
+#   for word in group:
+#     string += word
+
+# i = 0
+# while i < len(list):
+#   j = 0
+#   while j < len(list[i]):
+#     string += list[i][j]
+#     j += 1
+#   i += 1
+
+# print(string)
 
 # SOLUTIONS: https://gist.github.com/peterxjang/af8985dc4fb07ea14b4bd6ba41cb08f8
