@@ -37,6 +37,12 @@
 # string = "bookkeeper"
 # dictionary = {}
 
+# if len(dictionary.keys()) == 0:
+#     dictionary[string[0]] = 0
+# dictionary[string[0]] += 1
+
+# print(dictionary)
+
 # for letter in string:
 #     print(letter)
 #     print(None)
@@ -56,6 +62,24 @@
 
 #  4. Convert a hash into an array of arrays.
 #     For example, {"chair" => 100, "book" => 14} becomes [["chair", 100], ["book", 14]].
+
+# dictionary = {"chair": 100, "book": 14}
+# list = []
+
+# names = dictionary.keys()
+# values = dictionary.values()
+
+# print(names)
+# print(values)
+
+# i = 0
+# while i < len(dictionary):
+#     print(names[i])
+#     list.append(names[i])
+#     list.append(values[i])
+#     i += 1
+
+# print(list)
 
 #  5. Convert a hash into an array of hashes using the keys from each hash as the :id key in each of the array's hashes.
 #     For example, {321 => {name: "Alice", age: 31}, 322 => {name: "Maria", age: 27}} becomes [{id: 321, name: "Alice", age: 31}, {id: 322, name: "Maria", age: 27}].
